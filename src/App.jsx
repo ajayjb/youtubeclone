@@ -28,7 +28,6 @@ class App extends react.Component {
       .then((res) => {
         this.setState({ videos: res.data.items });
         this.setState({ selectedVideo: res.data.items[0] });
-        console.log(this.state.videos);
       })
       .catch((e) => {
         console.log(e);
