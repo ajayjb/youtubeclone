@@ -1,0 +1,13 @@
+.videoPlayer {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.videoTitle {
+  font-size: 1.2rem;
+}
+
+.videoDescription {
+  font-size: 1rem;
+  margin-top: 15px;
+}

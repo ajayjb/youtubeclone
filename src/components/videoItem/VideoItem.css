@@ -1,0 +1,17 @@
+.video-item {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  border-bottom: 1px solid rgb(71, 70, 70);
+  cursor: pointer;
+}
+
+.thumnail {
+  width: 200px;
+  padding: 10px;
+  padding-right: 10px;
+}
+
+.title {
+  font-size: 0.9rem;
+}
