@@ -1,6 +1,6 @@
 .videoPlayer {
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .videoTitle {
@@ -10,4 +10,10 @@
 .videoDescription {
   font-size: 1rem;
   margin-top: 15px;
+}
+
+h3.chTitle {
+  color: #ff5959;
+  position: relative;
+  bottom: 10px;
 }

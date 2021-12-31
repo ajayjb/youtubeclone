@@ -1,0 +1,28 @@
+.footer {
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 15px;
+  font-weight: 500;
+  color: aqua;
+}
+
+.para {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: aqua;
+  margin-top: 2px;
+}
+
+.footerTwitter {
+  margin-top: 7px;
+  color: white;
+  color: aqua;
+}

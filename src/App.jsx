@@ -5,6 +5,7 @@ import youtube from "./components/Api.js";
 import Video from "./components/videoDetail/Video";
 import VideoList from "./components/videoList/VideoList";
 import "./App.css";
+import Footer from "./components/footer/Footer";
 
 class App extends react.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class App extends react.Component {
       .then((res) => {
         this.setState({ videos: res.data.items });
         this.setState({ selectedVideo: res.data.items[0] });
+        console.log(this.state.videos);
       })
       .catch((e) => {
         console.log(e);
@@ -39,19 +41,22 @@ class App extends react.Component {
 
   render() {
     return (
-      <div className="main ui container">
-        <SearchBar onFormSubmit={this.onSearch} />
-        <div className="forSplit">
-          <div className="forVideo">
-            <Video video={this.state.selectedVideo} />
-          </div>
-          <div className="forList">
-            <VideoList
-              onVideoSelect={this.onVideoSelect}
-              videos={this.state.videos}
-            />
+      <div>
+        <div className="main ui container">
+          <SearchBar onFormSubmit={this.onSearch} />
+          <div className="forSplit">
+            <div className="forVideo">
+              <Video video={this.state.selectedVideo} />
+            </div>
+            <div className="forList">
+              <VideoList
+                onVideoSelect={this.onVideoSelect}
+                videos={this.state.videos}
+              />
+            </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

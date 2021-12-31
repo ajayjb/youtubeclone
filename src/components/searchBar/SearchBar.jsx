@@ -21,9 +21,9 @@ class SearchBar extends react.Component {
             <div className="field">
               <label
                 style={{
-                  color: "white",
                   fontSize: "2.2rem",
                   marginBottom: "20px",
+                  color: "#ff5959",
                 }}
                 htmlFor="search"
               >
